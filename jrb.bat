@@ -1,0 +1,25 @@
+@ECHO OFF
+SET RUBY_MAJOR=1.8
+SET RUBY_VERSION=jruby-1.3.0RC1
+SET RUBY_PATH=%HOME%\Tools\Ruby
+
+REM Only JRuby: SET JAVA_HOME
+SET JAVA_HOME=%ProgramFiles%\Java\jre6
+
+REM Setting GEM_PATH
+SET GEM_PATH=%HOME%\.gem\ruby\%RUBY_MAJOR%
+
+REM Setting GEM_HOME
+SET GEM_HOME=%HOME%\.gem\ruby\%RUBY_MAJOR%
+
+REM Adding %RUBY_MAJOR% Gems to the PATH
+REM (takes higher priority than Ruby itself)
+SET PATH=%PATH%;%GEM_PATH%\bin
+
+REM Adding %RUBY_VERSION% to the PATH
+SET PATH=%PATH%;%RUBY_PATH%\%RUBY_VERSION%\bin
+
+REM Cleanup
+SET RUBY_MAJOR=
+SET RUBY_VERSION=
+SET RUBY_PATH=
