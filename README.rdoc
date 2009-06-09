@@ -1,4 +1,4 @@
-= bin-files
+= binfiles
 
 The following are my personal <tt>bin</tt> files. I've setup the following
 folder structure inside my HOME:
@@ -92,3 +92,10 @@ What you see there is just a stub. I got sick of non-polite scripts that forces
 
 So, faked it, and also warned me when testing stuff if something nasty got
 executed.
+
+== Installation
+
+  CD %HOME%
+  MKDIR /P Tools
+  git clone git://github.com/luislavena/binfiles.git Tools\bin
+
