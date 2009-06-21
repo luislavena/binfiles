@@ -71,7 +71,7 @@ To use symlinks refer to your Windows documentation (<tt>mklink</tt> under Windo
 
 == Multiple versions of Ruby
 
-Right now this repository hold two scripts: <tt>rb18</tt> and <tt>rb19</tt>
+Right now this repository hold <tt>rb18</tt>, <tt>rb19</tt> and <tt>jrb</tt>
 Been using those to set the proper Ruby under my environment, since by default
 I don't have any version setup (the most clean as possible).
 
