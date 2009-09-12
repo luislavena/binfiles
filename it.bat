@@ -2,6 +2,9 @@
 SETLOCAL
 SET STARTER=START ""
 SET INTYPE="%ProgramFiles%\Intype\Intype.exe"
+IF NOT EXIST %INTYPE% (
+  SET INTYPE="%ProgramFiles(x86)%\Intype\Intype.exe"
+)
 
 IF "%1" == "-w" (
   SET STARTER=
