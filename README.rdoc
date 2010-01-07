@@ -7,7 +7,8 @@ folder structure inside my HOME:
   +---bin
   +---Git (symlinkd)
   +---Git-Versions
-  |   \---Git-1.6.3-preview20090507
+  |   +---Git-1.6.3-preview20090507
+  |   \---Git-1.6.4-preview20090729
   +---Icons
   +---MinGW
   |   +---gcc (symlinkd)
@@ -98,4 +99,3 @@ executed.
   CD %HOME%
   MKDIR /P Tools
   git clone git://github.com/luislavena/binfiles.git Tools\bin
-
