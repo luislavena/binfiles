@@ -5,6 +5,7 @@ SET VC_PATH=%HOME_TOOLS%\MSVC
 IF /I "%~1" == "6" SET TARGET_VC=VC6& GOTO :set_compiler
 IF /I "%~1" == "7" SET TARGET_VC=VC2003& GOTO :set_compiler
 IF /I "%~1" == "8" GOTO :set_winsdk6
+IF /I "%~1" == "9" GOTO :set_winsdk7
 GOTO :noop
 
 :set_compiler
@@ -29,6 +30,13 @@ GOTO :cleanup
 SET WINSDKPATH=%VC_PATH%\WinSDK6\bin
 CALL :cleanup
 %WINSDKPATH%\SetEnv.cmd /xp /Release
+SET WINSDKPATH=
+GOTO :EOF
+
+:set_winsdk7
+SET WINSDKPATH=%VC_PATH%\WinSDK7\SDK\bin
+CALL :cleanup
+%WINSDKPATH%\SetEnv.cmd /x86 /vista /Release
 SET WINSDKPATH=
 GOTO :EOF
 
