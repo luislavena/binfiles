@@ -1,10 +1,9 @@
 @ECHO OFF
 SETLOCAL
 SET STARTER=START ""
-SET INTYPE="%HOME_TOOLS%\Intype\intype.exe"
+SET INTYPE="%ProgramFiles%\Intype\Intype.exe"
 IF NOT EXIST %INTYPE% (
-  ECHO.Couldn't find 'intype.exe', please install it.
-  GOTO :EOF
+  SET INTYPE="%ProgramFiles(x86)%\Intype\Intype.exe"
 )
 
 IF "%1" == "-w" (
