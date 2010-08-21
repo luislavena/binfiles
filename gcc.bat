@@ -1,5 +1,0 @@
-@ECHO OFF
-SETLOCAL
-SET GCC_PATH=%HOME_TOOLS%\MinGW\gcc
-SET PATH=%GCC_PATH%\bin;%PATH%
-gcc.exe %*
